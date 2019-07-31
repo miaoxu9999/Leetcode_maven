@@ -25,7 +25,7 @@ public class Combinations {
             res.add(new ArrayList<Integer>(temp));
             return;
         }
-        for (int i = last + 1; i <= n ; i++)
+        for (int i = last + 1; i <= (n - (k - temp.size()) + 1) ; i++)
         {
             if (!flag[i])
             {
