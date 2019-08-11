@@ -1,5 +1,6 @@
 package com.mx.util;
 
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -43,8 +44,19 @@ public class RandomTwoArray {
         return res;
     }
 
+    public static String replace(String string)
+    {
+        string = string.replace('[', '{');
+        string = string.replace(']', '}');
+        return string;
+    }
+
     public static void main(String[] args) {
-        RandomTwoArray.randomTwoArray();
+        int[][] num = RandomTwoArray.randomTwoArray(4, 2);
         System.out.println(RandomTwoArray.print_String());
+
+        Arrays.sort(nums, (int[]a, int[] b) -> a[1] - b[1]);
+        System.out.println(RandomTwoArray.print_String());
+
     }
 }
