@@ -38,6 +38,13 @@ public class RandomArray {
         return res;
     }
 
+    public static String replace(String string)
+    {
+        string = string.replace('[', '{');
+        string = string.replace(']', '}');
+        return string;
+    }
+
 
 
     public static void main(String[] args) {
